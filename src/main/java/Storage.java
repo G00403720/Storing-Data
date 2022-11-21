@@ -11,7 +11,7 @@ public class Storage {
         System.out.println("My file is located at " + myFile.getAbsolutePath());
 
         try {
-            FileWriter myWriter = new FileWriter("MyWriter.txt");
+            FileWriter myWriter = new FileWriter(myFile,true);
             myWriter.write("This is my second line");
             myWriter.close();
         } catch (IOException e) {
